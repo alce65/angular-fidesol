@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NuevaTareaComponent } from './nueva-tarea.component';
+<<<<<<< HEAD
+=======
+import { FormsModule } from '@angular/forms';
+>>>>>>> master
 
 describe('NuevaTareaComponent', () => {
   let component: NuevaTareaComponent;
@@ -8,7 +12,12 @@ describe('NuevaTareaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+<<<<<<< HEAD
       declarations: [ NuevaTareaComponent ]
+=======
+      declarations: [ NuevaTareaComponent ],
+      imports: [FormsModule]
+>>>>>>> master
     })
     .compileComponents();
   }));
