@@ -1,24 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { TareaComponent } from './tarea.component';
-import { FormsModule } from '@angular/forms';
-import { TareaModel } from 'src/app/models/tarea.model';
 
-describe('TareaComponent', () => {
-  let component: TareaComponent;
-  let fixture: ComponentFixture<TareaComponent>;
+import { FormTDComponent } from './form-td.component';
+import { FormsModule } from '@angular/forms';
+
+describe('FormTDComponent', () => {
+  let component: FormTDComponent;
+  let fixture: ComponentFixture<FormTDComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TareaComponent ],
+      declarations: [ FormTDComponent ],
       imports: [FormsModule]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TareaComponent);
+    fixture = TestBed.createComponent(FormTDComponent);
     component = fixture.componentInstance;
-    component.tarea = new TareaModel();
     fixture.detectChanges();
   });
 
